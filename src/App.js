@@ -8,7 +8,7 @@ export default function TodoList() {
     const ajouterTache = () => {
         if (text.trim() !== '') { // vérifie que le champ est pas vide
             setTodos([...todos, text]); // ajouter la tâche à la suite des autres
-            setText(''); // vider le champ (en principe 😔)
+            setText(''); // vider le champ
         }
     }
 
