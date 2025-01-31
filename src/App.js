@@ -22,6 +22,7 @@ export default function TodoList() {
                 <h1>Taskify</h1>
                 <h2>Ajouter une nouvelle tâche</h2>
                 <input
+                    value={text}
                     onChange={e => setText(e.target.value)}
                     placeholder="Nom de la tâche"
                     type="text"
@@ -29,6 +30,8 @@ export default function TodoList() {
                 <button
                     className="boutonAjouter"
                     onClick={ajouterTache}>Ajouter</button>
+
+                <hr />
 
                 <ul className="listeTaches">
                     {todos.map((tache, id) => (
