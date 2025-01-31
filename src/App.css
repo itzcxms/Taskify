@@ -1,13 +1,20 @@
 body {
-    margin: 10px;
+    margin: 20px;
 }
 
 .boutonAjouter {
     margin-left: 5px;
+    border-radius: 15px;
+    border: none;
+    padding: 4px 8px;
+    background-color: blue;
+    color: white;
 }
-
+.listeTaches {
+    padding: 0;
+}
 .listeTaches li {
-    background-color: lightgray;
+    background-color: #F6F6F6;
     list-style: none;
     height: 50px;
     margin-top: 5px;
@@ -16,8 +23,15 @@ body {
     align-content: center;
     padding-left: 30px;
 }
+.listeTaches li:hover {
+    background-color: #EFEFEF;
+}
 .listeTaches li button {
+    color: white;
     border-radius: 20px;
     border: none;
     padding: 4px 8px;
+    background-color: #ff4343;
+    float: right;
+    margin-right: 20px;
 }
